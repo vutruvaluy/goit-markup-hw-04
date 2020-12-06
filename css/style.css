@@ -100,31 +100,50 @@ a {
     color: var(--accent-color) ;
 }
 
-.current {
+.site-nav a.current {
     color: var(--accent-color);
 }
 
 .contacts-nav .link {
-    color: var(--accent-color);
+    color: var(--text-color);
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14px;
+    line-height: 16px;
     letter-spacing: 0.02em;
-
 }
 
-.contacts-nav .link::before{
+.contacts-nav .link:hover,
+ .contacts-nav .link:focus {
+     color: var(--accent-color);
+ }
+
+/*.contacts-nav .link::before{
     display: inline-block;
     content: '';
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    background-image: url("../img/envelope\ \(hover\).png");
+    background-image: url("./img/sprite.svg#img-envelope-(hover)")
     background-repeat: no-repeat;
     background-size: contain;
+    
+}*/
+.icon-envelope{
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+}
+.icon-vector{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.link-icon{
+    fill: currentColor;
+    vertical-align: middle;
 }
 
 .contacts-nav {
@@ -139,7 +158,7 @@ a {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14px;
+    line-height: 1,14;
 }
 
 .contacts-nav .phone:hover,
@@ -147,7 +166,7 @@ a {
      color: var(--accent-color);
  }
 
-.contacts-nav .phone::before{
+/*.contacts-nav .phone::before{
     display: inline-block;
     content: '';
     width: 15px;
@@ -156,7 +175,7 @@ a {
     background-image: url("../img/Vector\ \(4\).png");
     background-repeat: no-repeat;
     background-size: contain;
-}
+}*/
 
 /*Section*/
  
@@ -175,7 +194,7 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 2;
     letter-spacing: 0.03em;
 
      color: var(--text-color) ;
@@ -277,7 +296,7 @@ a {
     line-height: 1,87px;
 }
 .section .title{
-    margin-top: o;
+    margin-top: 0;
     margin-bottom: 10px;
 
     font-family: Roboto;
@@ -294,16 +313,19 @@ a {
 
     width: 270px;
     height: 428px;
-
+   
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
 }
 
+
 .social{
     display: flex;
     margin-left: wrap;
+
 }
+
 
 .social-network .social{   
     width: calc((100%-90px) / 4);
@@ -479,7 +501,6 @@ a {
     color: var(--background-color);
     
 }
-
 
 .card{
    width: 370px;
