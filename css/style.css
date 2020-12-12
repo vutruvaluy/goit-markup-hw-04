@@ -338,7 +338,7 @@ a {
     fill: #FFFFFF;
 }
 
- .command-selection{
+ /*.command-selection{
 
     margin-left: 0;
     margin-right: 10;
@@ -346,15 +346,14 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1,26;
-}
+}*/
 .command-selection{
     display: flex;
     margin-left: wrap;
 }   
 
 .command-selection .item{
-    width: calc((100%-90px) / 4);
-    margin-right: 30px;
+   
     text-align: center;
 }
 .command-selection .item:nth-child(4n){
@@ -365,8 +364,7 @@ a {
 .hero{
     background-color: var(--text-color);
     text-align: center;
-}
-.overlay{
+
     padding-top: 200px;
     max-width: 1600px;
     height: 600px;
@@ -422,38 +420,51 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.client-icon{
+.client-list{
     display: flex;
 }
 
-.client-icon .item {
-    width: calc((100%-150px) / 6);
-    margin-right: 30px; 
-}
-
-.client-icon .item:nth-child(6n){
-    margin-right: 0;
-}
-
-.client-icon .item{
+.client-list-item {
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.client-icon .icon{
-    fill: #AFB1B8;
-}
 
-.client-icon .icon:hover,
-.client-icon .icon:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+.client-list-item{
+width: calc((100%-150px) / 6);
+margin-right: 30px;
+}
+.client-list-item:nth-child(6n){
+    margin-right: 0;
+}
+.client-link{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+} 
+.client-logo{
+    fill: #AFB1B8;
+}  
+.client-list-item:hover,
+.client-list-item:focus{
+    border-color: var(--accent-color);
+}
+.client-list-item:hover .client-logo,
+.client-list-item:focus .client-logo{
+    fill:var(--accent-color)
 }
 
 .name{
     margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
 }
 
 .passive-list{
