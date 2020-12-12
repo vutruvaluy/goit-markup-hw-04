@@ -338,15 +338,12 @@ a {
     fill: #FFFFFF;
 }
 
- /*.command-selection{
+ .command-selection{
 
     margin-left: 0;
     margin-right: 10;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1,26;
-}*/
+}
 .command-selection{
     display: flex;
     margin-left: wrap;
@@ -356,6 +353,10 @@ a {
    
     text-align: center;
 }
+.command-selection .item{
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+    }
 .command-selection .item:nth-child(4n){
   margin-right: 0;
 }
