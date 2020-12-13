@@ -449,12 +449,12 @@ margin-right: 30px;
 .client-logo{
     fill: #AFB1B8;
 }  
-.client-list-item:hover,
-.client-list-item:focus{
+.client-link:hover,
+.client-link:focus{
     border-color: var(--accent-color);
 }
-.client-list-item:hover .client-logo,
-.client-list-item:focus .client-logo{
+.client-link:hover .client-logo,
+.client-link:focus .client-logo{
     fill:var(--accent-color)
 }
 
