@@ -140,26 +140,18 @@ a {
 .contacts-nav .item + .item{
     margin-left: 50px;
 }
-/*.contacts-nav .phone {
-    color: var(--text-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1,14;
-}
-
-.contacts-nav .phone:hover,
- .contacts-nav .phone:focus {
-     color: var(--accent-color);
- }
-
-/*Section*/
  
 .section{
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #FFFFFF;
 }
-.section.no-padding{
+.padding{
+    padding-top: 0;
+    padding-bottom: 94px;
+    background-color: #FFFFFF; 
+}
+.no-padding{
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--secondary-color-grey);
@@ -191,8 +183,7 @@ a {
 
 .site-advantage{
     display: flex;
-    margin-left: wrap;
-    padding-top: 94px; 
+    margin-left: wrap; 
 }
 .site-advantage .item{
     width: calc((100%-90px) / 4);
@@ -251,11 +242,6 @@ a {
 .site-works .item:nth-child(3n){
     margin-right: 0;
 }
-.work-list{
-    padding-top: 94px;
-}
-
-
 
 .command-selection .section-text{
     margin-bottom: 16px;
